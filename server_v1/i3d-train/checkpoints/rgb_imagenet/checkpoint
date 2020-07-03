@@ -1,0 +1,2 @@
+model_checkpoint_path: "/home/tony595595/i3d-train/checkpoints/rgb_imagenet/model.ckpt"
+all_model_checkpoint_paths: "/home/tony595595/i3d-train/checkpoints/rgb_imagenet/model.ckpt"
