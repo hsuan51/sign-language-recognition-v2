@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+ *  Copyright (c) 2015 The WebRTC project authors. All Rights Reserved.
+ *
+ *  Use of this source code is governed by a BSD-style license
+ *  that can be found in the LICENSE file in the root of the source
+ *  tree.
+-->
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css" type='text/css'>
+<!--
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <title>getUserMedia</title>
+
+</head>
+
+<body>
+    <div class="col-md-6 offset-md-3 bg-info" id="bgColor">
+        <div class="row">
+                <video id="inputVideo" class="center embed-responsive" autoplay playsinline></video>
+        </div>
+        <div class="row">
+            <div class="col-md-2 offset-md-1 text-center">
+                <button id="startBtn" type="button" class="btn btn-primary">Start</button>
+            </div>
+            <div class="col-md-5 bg-dark text-break font-weight-bold">
+                <span id="ans" class="text-white" style="line-height:40px"></span>
+            </div>
+            <div class="col-md-4">
+                <button id="translateBtn" type="button" class="btn btn-warning">Translate</button>
+                <button id="clearBtn" type="button" class="btn btn-danger">Clear</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+
+
+</body>
+
+</html>
