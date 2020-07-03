@@ -1,6 +1,0 @@
-model_checkpoint_path: "i3d_ucf_model-11999"
-all_model_checkpoint_paths: "i3d_ucf_model-9999"
-all_model_checkpoint_paths: "i3d_ucf_model-10499"
-all_model_checkpoint_paths: "i3d_ucf_model-10999"
-all_model_checkpoint_paths: "i3d_ucf_model-11499"
-all_model_checkpoint_paths: "i3d_ucf_model-11999"
