@@ -81,9 +81,10 @@ sudo cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local/opencv
 sudo make -j2
 sudo make install
 ```
-測試dense-flow
+
+## 測試dense-flow
 進入/server_v1/dense-flow
-先編輯Makefile.config
+先編輯Makefile.config並加入下列內容
 ```
 INCLUDE=-I/some/path/opencv/include -Iinclude/
 LIB=-L/some/path/opencv/lib
@@ -92,13 +93,18 @@ LIB=-L/some/path/opencv/lib
 ```
 sudo nano opencv.conf
 ```
-加入/usr/local/opencv/lib
-測試提取光流
+在opencv.conf中加入以下
+```
+/usr/local/opencv/lib
+```
+測試是否能提取影片光流，--vidFile為自己的影片檔案
 ```
 ./denseFlow_gpu --vidFile="video.mp4" --xFlowFile="flow_x" --yFlowFile="flow_y" --imgFile="im" --bound=16 --type=2 --device_id=0 --step=10
 ```
+
+## 架設server
 [下載nginx](https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-18-04)
-[在no-ip申請免費domain](https://www.noip.com/)
+[在no-ip申請免費domain name](https://www.noip.com/)
 將client_v1移至/var/www/html
 ```
 sudo mv client_v1/ /var/www/html/
